@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./api/read.js"></script>
+    <script src="./api/post.js"></script>
+    <script src="./api/scan.js"></script>
+    <script src="./api/delete.js"></script>
+</head>
+
+<body>
+
+    input: <input type="text" id="inputField" placeholder="Enter something">
+
+    <script type="module">
+        import { postData } from './api/post.js';
+        import { deleteRow } from './api/delete.js';
+        import { readRow } from './api/read.js';
+        import { scan } from './api/scan.js';
+
+
+
+        var inputValue = document.getElementById("inputField").value;
+        // postData(2, inputValue, "hi"); // Example: Post data to Row 2
+    </script>
+</body>
+
+</html>
